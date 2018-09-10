@@ -1164,7 +1164,12 @@ body {
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .header .head-name {
+    font-size: 85px;
+  }
 }
+
 
 @media screen and (max-width: 1024px) {
   .mobile-hidden {
