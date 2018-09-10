@@ -1109,6 +1109,19 @@ body {
   transform: rotate(-45deg);
 }
 
+.valid {
+  font-family: MM, Arial, sans-serif;
+  font-size: 11px;
+  color: red;
+  transition: 0.2s linear all;
+  opacity: 0;
+  text-align: center;
+}
+
+.tel:invalid:not(:placeholder-shown) + .valid {
+  opacity: 1;
+}
+
 @media screen and (max-width: 440px) {
   .modal-div {
     padding: 60px 60px 70px;
@@ -1156,6 +1169,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .block7 .slick-slide {
+    padding: 0 5px;
+  }
+}
+
 @media screen and (max-width: 1366px) {
   .block5 .block5-bottom img {
     margin-right: 3%;
@@ -1167,6 +1186,10 @@ body {
 
   .header .head-name {
     font-size: 85px;
+  }
+
+  .block6 .first-item p {
+    padding-left: 50%;
   }
 }
 

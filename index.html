@@ -22,6 +22,10 @@
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
+    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 100px;background: #2A72C1 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:222px;}</style>
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},50);};</script>
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
     <header class="header container-fluid">
         <div data-wow-delay="1.5s" data-wow-duration="1s" class="header-top wowa fadeInDownBig row mobile-hidden">
             <div class="col-lg-2 line-block">
@@ -91,7 +95,7 @@
                 <h1 class="head-name text-center">Петровская Доминанта</h1>
             </div>
             <div class="col-lg-6">
-                <h3 class="header-sub_bottom text-center mobile-hidden">&mdash;&nbsp;здесь шумят только волны &mdash;</h3>
+                <h3 class="header-sub_bottom text-center mobile-hidden">&mdash;&nbsp;здесь шумят только волны&nbsp;&mdash;</h3>
                 <h3 class="header-sub_bottom text-center desctop-hidden">здесь шумят только волны</h3>
             </div>
             <div class="col-12 desctop-hidden">
@@ -367,7 +371,8 @@
         <h2 class="modal-title">Оставить заявку</h2>
         <form class="modal-form">
             <input type="text" required class="name" name="Имя" placeholder="Имя">
-            <input type="tel" required class="tel" name="Телефон" placeholder="Телефон">
+            <input type="tel" required class="tel" name="Телефон" placeholder="Телефон" pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+            <span class="valid">Пожалуйста, введите в формате 89991233212</span>
             <button type="submit" class="submit">Отправить</button>
         </form>
         <div class="close-modal"></div>
@@ -378,9 +383,6 @@
     </script>
     <!-- HelloPreload http://hello-site.ru/preloader/ -->
     <!-- HelloPreload http://hello-site.ru/preloader/ -->
-    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 100px;background: #2A72C1 url(http://hello-site.ru//main/images/preloads/puff.svg) center center no-repeat;background-size:222px;}</style>
-    <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
-    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},100);};</script>
-    <!-- HelloPreload http://hello-site.ru/preloader/ -->
+
     </body>
 </html>

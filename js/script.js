@@ -366,6 +366,7 @@ $(document).ready(function() {
         $('.modal-div').addClass('modal-div-show');
         $('body, html').css('overflow', 'hidden');
         $('.name').attr('autofocus', true);
+        $('.name').select();
     });
 
     $('.close-modal').click(function() {
