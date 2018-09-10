@@ -360,20 +360,35 @@ $(document).ready(function() {
 
 
 
-
-
-
     $('.button').click(function() {
         $('.modal-overlay').css('display','block');
         $('.modal-div').css('display','flex');
         $('.modal-div').addClass('modal-div-show');
         $('body, html').css('overflow', 'hidden');
+        $('.name').attr('autofocus', true);
     });
 
     $('.close-modal').click(function() {
        $('.modal-overlay').css('display','none');
         $('.modal-div').css('display','none');
         $('body, html').css('overflow', 'auto');
+        $('.name').attr('autofocus', false);
     });
-
+    
+    $('.modal-overlay').click(function() {
+       $('.modal-overlay').css('display','none');
+        $('.modal-div').css('display','none');
+        $('body, html').css('overflow', 'auto');
+        $('.name').attr('autofocus', false);
+    });
+    
+    window.addEventListener("keydown", function(evt) {
+        if(evt.keyCode === 27) {
+            evt.preventDefault();
+            $('.modal-overlay').css('display','none');
+        $('.modal-div').css('display','none');
+        $('body, html').css('overflow', 'auto');
+            $('.name').attr('autofocus', false);
+        }
+     });
 });
