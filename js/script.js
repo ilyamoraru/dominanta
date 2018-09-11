@@ -68,7 +68,7 @@ function initMap() {
     }
     ),
     o=new google.maps.Map(document.getElementById("map2"), {
-        zoom:13.3, center:e, disableDefaultUI:!0, zoomControl:!0, scrollwheel:!1, styles:[ {
+        zoom:12.3, center:e, disableDefaultUI:!0, zoomControl:!0, scrollwheel:!1, styles:[ {
             featureType:"administrative", elementType:"labels.text.fill", stylers:[ {
                 color: "#444444"
             }
@@ -253,6 +253,19 @@ function initMap() {
 }
 
 $(document).ready(function() {
+
+    $('.slider-img').click(function() {
+       $('.modal-overlay').css('display', 'block');
+       var cont = $('.modal-img .img-cont');
+       var img = $(this).clone();
+       $('.modal-img').css('display', 'flex');
+        $('.modal-img').addClass('img-cont-show');
+        $('html, body').css('overflow', 'hidden');
+        cont.append(img);
+    });
+
+
+
     $(".block7").slick( {
         arrows:!1, focusOnSelect:!0, dots:!0, centerMode:!0, slidesToShow:3, centerPadding:"120px", responsive:[ {
             breakpoint:1025, settings: {
@@ -284,13 +297,13 @@ $(document).ready(function() {
         $(".modal-overlay").css("display", "block"), $(".modal-div").css("display", "flex"), $(".modal-div").addClass("modal-div-show"), $("body, html").css("overflow", "hidden"), $(".name").attr("autofocus", !0), $(".name").select()
     }
     ), $(".close-modal").click(function() {
-        $(".modal-overlay").css("display", "none"), $(".modal-div").css("display", "none"), $("body, html").css("overflow", "auto"), $(".name").attr("autofocus", !1)
+        $(".modal-overlay").css("display", "none"), $(".modal-div").css("display", "none"), $("body, html").css("overflow", "auto"), $(".name").attr("autofocus", !1), $('.modal-img').css('display', 'none'), $('.modal-img img').remove()
     }
     ), $(".modal-overlay").click(function() {
-        $(".modal-overlay").css("display", "none"), $(".modal-div").css("display", "none"), $("body, html").css("overflow", "auto"), $(".name").attr("autofocus", !1)
+        $(".modal-overlay").css("display", "none"), $(".modal-div").css("display", "none"), $("body, html").css("overflow", "auto"), $(".name").attr("autofocus", !1), $('.modal-img').css('display', 'none'), $('.modal-img img').remove()
     }
     ), window.addEventListener("keydown", function(e) {
-        27===e.keyCode&&(e.preventDefault(), $(".modal-overlay").css("display", "none"), $(".modal-div").css("display", "none"), $("body, html").css("overflow", "auto"), $(".name").attr("autofocus", !1))
+        27===e.keyCode&&(e.preventDefault(), $(".modal-overlay").css("display", "none"), $(".modal-div").css("display", "none"), $("body, html").css("overflow", "auto"), $(".name").attr("autofocus", !1),  $('.modal-img').css('display', 'none'), $('.modal-img img').remove())
     }
     )
 }

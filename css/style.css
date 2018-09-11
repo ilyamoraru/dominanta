@@ -913,6 +913,7 @@ a:hover {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     max-height: 400px;
+    cursor: pointer;
 }
 
 .block7 .slick-slide {
@@ -1176,6 +1177,65 @@ body {
 
 .tel:invalid:not(:placeholder-shown) + .valid {
     opacity: 1
+}
+
+.modal-img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-120vh);
+    transition: all 0.3s linear;
+}
+
+.modal-img  img {
+    border-radius: 4px;
+    max-width: 1200px;
+}
+
+.img-cont {
+    position: relative;
+
+}
+
+.img-cont-show {
+    animation: modal 0.3s linear forwards;
+}
+
+.img-cont .close-modal {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -40px;
+    right: -40px;
+    background: rgba(213, 220, 224, 0.24);
+}
+
+.img-cont .close-modal::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background: white;
+    top: 19px;
+    left: 12px;
+    transform: rotate(45deg);
+}
+
+.img-cont .close-modal::after {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background: white;
+    top: 19px;
+    left: 12px;
+    transform: rotate(-45deg);
 }
 
 @media screen and (max-width:440px) {
