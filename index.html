@@ -27,7 +27,7 @@
     <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},50);};</script>
     <!-- HelloPreload http://hello-site.ru/preloader/ -->
     <header class="header container-fluid">
-        <div data-wow-delay="0.5s" data-wow-duration="1s" class="header-top wowa fadeInDownBig row mobile-hidden">
+        <div class="header-top row mobile-hidden">
             <div class="col-lg-2 line-block">
                 <h2 class="header-top_title">
                     <span class="first">Петровская</span>
@@ -35,8 +35,8 @@
                 </h2>
                 <p class="header-address">ул. Петровская коса, д. 7/2</p>
             </div>
-            <div class="col-lg-3">
-                <ul class="header-nav">
+            <div class="col-lg-3 row">
+                <ul class="header-nav" style="margin-right: 5%;">
                     <li class="header-nav_item">
                         <a href="#map1">Расположение</a>
                     </li>
@@ -46,6 +46,8 @@
                     <li class="header-nav_item">
                         <a href="#2">Квартиры</a>
                     </li>
+                </ul>
+                <ul class="header-nav">
                     <li class="header-nav_item">
                         <a href="#3">Архитектура</a>
                     </li>
@@ -87,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div data-wow-delay="1s" data-wow-duration="1.5s" class="header-center wowa fadeInUpBig row justify-content-center">
+        <div class="header-center  row justify-content-center">
             <div class="col-xl-6 col-lg-12 col-12 ">
                 <h2 class="head-subtitile text-center">ЖИЛОЙ КОМПЛЕКС</h2>
             </div>
@@ -102,7 +104,7 @@
                 <button type="button" class="button">Оставить заявку</button>
             </div>
         </div>
-        <div data-wow-delay="2s" class="header-bottom wowa fadeInUpBig row">
+        <div class="header-bottom  row">
             <ul class="header-bottom-list">
                 <li class="bottom-item first-item">
                     <p>Корпуса с&nbsp;видами на&nbsp;Неву в&nbsp;десяти минутах езды от&nbsp;центра города</p>
@@ -117,7 +119,7 @@
         </div>
     </header>
     <div class="map1  container-fluid" id="map1" ></div>
-    <div data-wow-offset="300" class="block1 wowa fadeInLeftBig container-fluid" id="1">
+    <div data-wow-offset="300" data-wow-duration="0.5s" class="block1 wowa fadeInLeftBig container-fluid" id="1">
         <div class="row">
             <div class="col-lg-12 col-xl-7">
                 <h3 class="block-title">
@@ -148,21 +150,21 @@
         <div class="row">
             <div class="col-xl-5 m-order-1 row justify-content-center">
                 <ul class="block3-list">
-                    <li data-wow-offset="200" class="block3-item wowa fadeInLeft">
+                    <li data-wow-duration="0.5s"  class="block3-item wowa fadeInLeft">
                         <h4 class="block3-title">Среднеэтажное строительство</h4>
                         <p class="block3-desc">Архитектор проекта&nbsp;&mdash; известное архитектурное бюро Intercolumnium</p>
                     </li>
-                    <li data-wow-offset="200" data-wow-delay="0.3s" class="block3-item wowa fadeInLeft">
+                    <li  data-wow-duration="0.5s" data-wow-delay="0.3s" class="block3-item wowa fadeInLeft">
                         <h4 class="block3-title">Великолепные виды из&nbsp;окон</h4>
                         <p class="block3-desc">Единая концепция ландшафтного дизайна всей территории.</p>
                     </li>
-                    <li data-wow-offset="200" data-wow-offset="100" data-wow-delay="0.6s" class="block3-item wowa fadeInLeft">
+                    <li data-wow-duration="0.5s" data-wow-delay="0.6s" class="block3-item wowa fadeInLeft">
                         <h4 class="block3-title">Закрытая безопасная территория</h4>
                         <p class="block3-desc">Тихие стильные внутренние дворы в&nbsp;каждом корпусе.</p>
                     </li>
                 </ul>
             </div>
-            <div data-wow-offset="200" class="col-xl-6 wowa fadeInRightBig m-order-0">
+            <div data-wow-duration="0.5s" class="col-xl-6 wowa fadeInRightBig m-order-0">
                 <h3 class="block-title">
                     Жить на&nbsp;острове&nbsp;&mdash; красиво
                 </h3>
@@ -172,7 +174,7 @@
         </div>
     </div>
     <div class="block4 container-fluid">
-        <div data-wow-offset="200" class="row wowa fadeInDown justify-content-center">
+        <div data-wow-duration="0.5s" data-wow-offset="200" class="row wowa fadeInDown justify-content-center">
             <h2 class="title text-center">Безопасно, удобно, аристократично</h2>
             <p class="desc text-center">Системы видеонаблюдения, контроля и&nbsp;управления доступом, домофония и&nbsp;охрана обеспечат ваш покой и&nbsp;уединение.</p>
         </div>
@@ -181,45 +183,49 @@
         <div class="row">
             <div class="block5-inner">
                 <ul class="block5-top">
-                    <li  data-wow-delay="0.3s" class="block5-item wowa fadeInUpBig">
+                    <li  data-wow-duration="0.5s" data-wow-delay="0.3s" class="block5-item wowa fadeInUpBig">
                         <h3 class="title">Прогулочная набережная</h3>
                         <p class="desc">Мощеные дорожки образуют прекрасную прогулочную зону и&nbsp;ведут на&nbsp;центральную площадь квартала со&nbsp;спуском к&nbsp;воде и&nbsp;слипом для яхт.</p>
                     </li>
-                    <li data-wow-delay="0.6s"  class="wowa fadeInUpBig block5-item">
+                    <li data-wow-duration="0.5s" data-wow-delay="0.6s"  class="wowa fadeInUpBig block5-item">
                         <h3 class="title">Центр притяжения</h3>
                         <p class="desc">Стильный дизайн внутренних дворов
                             с&nbsp;малыми архитектурными формами, скамейками и&nbsp;изящными фонарями является частью общей концепции комплекса.</p>
                     </li>
-                    <li data-wow-delay="0.8s"  class="block5-item wowa fadeInUpBig">
+                    <li data-wow-duration="0.5s" data-wow-delay="0.8s"  class="block5-item wowa fadeInUpBig">
                         <h3 class="title">Дворы без машин</h3>
                         <p class="desc">Для детей здесь оборудованы площадки для спорта и&nbsp;игр, а&nbsp;также выстроен детский сад, обособленный как от&nbsp;улиц, так и&nbsp;от&nbsp;жилых корпусов.</p>
                     </li>
                 </ul>
                 <div class="block5-bottom" id="4">
-                    <img  src="img/block5.png" alt="" class="m-order-1 wowa fadeIn">
+                    <img data-wow-duration="0.5s"  src="img/block5.png" alt="" class="m-order-1 wowa fadeIn">
                     <div class="block5-right m-order-0">
-                        <h3  class="title-bot wowa fadeInRight">Технологичность в&nbsp;каждой детали</h3>
-                        <p  class="desc-bot wowa fadeInRight">Во&nbsp;всех инженерных системах &laquo;Петровской Доминанты&raquo; используется оборудование от&nbsp;ведущих мировых производителей.</p>
-                        <ul data-wow-delay="0.3s"  class="block5-rigth_list wowa fadeInRight">
-                            <li class="right-item">
-                                <p>Эффективная&nbsp;система вентиляции</p>
-                            </li>
-                            <li class="right-item">
-                                <p>Специальные&nbsp;места для&nbsp;кондиционеров</p>
-                            </li>
-                            <li class="right-item">
-                                <p>Паркинг&nbsp;на&nbsp;395 машиномест</p>
-                            </li>
-                            <li class="right-item">
-                                <p>Трубки&nbsp;отопления в&nbsp;стяжке&nbsp;пола</p>
-                            </li>
-                            <li class="right-item">
-                                <p>Полный&nbsp;контроль&nbsp;всех систем&nbsp;диспетчером</p>
-                            </li>
-                            <li class="right-item">
-                                <p>Современные лифты</p>
-                            </li>
-                        </ul>
+                        <h3 data-wow-duration="0.5s"  class="title-bot wowa fadeInRight">Технологичность в&nbsp;каждой детали</h3>
+                        <p  data-wow-duration="0.5s" class="desc-bot wowa fadeInRight">Во&nbsp;всех инженерных системах &laquo;Петровской Доминанты&raquo; используется оборудование от&nbsp;ведущих мировых производителей.</p>
+                        <div class="list-cont">
+                            <ul data-wow-duration="0.5s" data-wow-delay="0.3s"  class="block5-rigth_list wowa fadeInRight">
+                                <li class="right-item">
+                                    <p>Эффективная&nbsp;система вентиляции</p>
+                                </li>
+                                <li class="right-item">
+                                    <p>Специальные&nbsp;места для&nbsp;кондиционеров</p>
+                                </li>
+                                <li class="right-item">
+                                    <p>Паркинг&nbsp;на&nbsp;395 машиномест</p>
+                                </li>
+                            </ul>
+                            <ul data-wow-duration="0.5s" data-wow-delay="0.3s"  class="block5-rigth_list wowa fadeInRight">
+                                <li class="right-item">
+                                    <p>Трубки&nbsp;отопления в&nbsp;стяжке&nbsp;пола</p>
+                                </li>
+                                <li class="right-item">
+                                    <p>Полный&nbsp;контроль&nbsp;всех систем&nbsp;диспетчером</p>
+                                </li>
+                                <li class="right-item">
+                                    <p>Современные лифты</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,28 +234,28 @@
     <div class="block6 container-fluid">
         <div class="row margin">
             <div class="offset-lg-1 col-xl-4 col-12">
-                <h2 data-wow-offset="200" class="title wowa fadeInLeft">
+                <h2 data-wow-duration="0.5s" data-wow-offset="200" class="title wowa fadeInLeft">
                     Идеал для тех, кто&nbsp;ценит свободу во&nbsp;всем
                 </h2>
-                <h3 data-wow-offset="200" fata-wow-delay="0.3s" class="subtitle wowa fadeInLeft">&laquo;Петровская Доминанта&raquo;&nbsp;&mdash; жилой комплекс для тех, кто сам принимает решения и&nbsp;не&nbsp;терпит ограничений.</h3>
-                <p data-wow-offset="200" data-wow-offsey="400" class="content wowa fadeInLeft">Свободные классические и&nbsp;европланировки квартир, широкий выбор квартир:&nbsp;от&nbsp;однокомнатных до&nbsp;семикомнатных, скругленное панорамное остекление, собственные террасы, обзор на&nbsp;2-3&nbsp;стороны, квартиры с&nbsp;окнами в&nbsp;ванных и&nbsp;гардеробных&nbsp;&mdash; здесь вы&nbsp;легко найдете тот идеал личного пространства, который давно искали.</p>
+                <h3 data-wow-duration="0.5s" data-wow-offset="200" fata-wow-delay="0.3s" class="subtitle wowa fadeInLeft">&laquo;Петровская Доминанта&raquo;&nbsp;&mdash; жилой комплекс для тех, кто сам принимает решения и&nbsp;не&nbsp;терпит ограничений.</h3>
+                <p data-wow-duration="0.5s" data-wow-offset="200" data-wow-offsey="400" class="content wowa fadeInLeft">Свободные классические и&nbsp;европланировки квартир, широкий выбор квартир:&nbsp;от&nbsp;однокомнатных до&nbsp;семикомнатных, скругленное панорамное остекление, собственные террасы, обзор на&nbsp;2-3&nbsp;стороны, квартиры с&nbsp;окнами в&nbsp;ванных и&nbsp;гардеробных&nbsp;&mdash; здесь вы&nbsp;легко найдете тот идеал личного пространства, который давно искали.</p>
             </div>
-            <div class="offset-xl-1 col-xl-5 col-12">
-                <img alt="" data-wow-offset="200" class="wowa fadeIn" src="img/block6.jpg">
+            <div class="offset-xl-1 col-xl-5 col-12 fix">
+                <img data-wow-duration="0.5s" alt="" data-wow-offset="200" class="wowa fadeIn" src="img/block6.jpg">
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <ul class="block6-list">
-                    <li  class="wowa fadeInUpBig block6-item first-item">
+                    <li data-wow-duration="0.5s"  class="wowa fadeInUpBig block6-item first-item">
                         <p>квартиры<br>
                             до&nbsp;284 кв.м.</p>
                     </li>
-                    <li  data-wow-delay="0.3s" class="block6-item wowa fadeInUpBig second-item">
+                    <li data-wow-duration="0.5s"  data-wow-delay="0.3s" class="block6-item wowa fadeInUpBig second-item">
                         <p>высота окон<br>
                             до&nbsp;2,25&nbsp;м</p>
                     </li>
-                    <li data-wow-delay="0.6s"  class="block6-item wowa fadeInUpBig third-item">
+                    <li data-wow-duration="0.5s" data-wow-delay="0.6s"  class="block6-item wowa fadeInUpBig third-item">
                         <p>собственные террасы<br>
                             и зимние сады</p>
                     </li>

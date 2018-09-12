@@ -871,7 +871,8 @@ a:hover {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    max-height: 450px;
 }
 
 .block7 .slick-list {
@@ -886,6 +887,11 @@ a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex
+}
+
+.content-map {
+    font-family: EB, Arial, sans-serif;
+    font-size: 14px;
 }
 
 .block7 .slick-dots button {
@@ -912,7 +918,7 @@ a:hover {
 .block7 img {
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    max-height: 400px;
+    max-height: 350px;
     cursor: pointer;
 }
 
@@ -1305,7 +1311,33 @@ body {
     }
 }
 
+.list-cont {
+    display: flex;
+}
+
+.list-cont ul:first-child {
+    margin-right: 20px;
+}
+
 @media screen and (max-width:1024px) {
+
+    .block6 .content {
+        margin-bottom: 30px;
+    }
+
+    .block6 .title {
+        margin-bottom: 5%;
+    }
+
+    .block6 .col-xl-4 {
+        padding-top: 70px;
+    }
+
+    .fix {
+        display: flex;
+        justify-content: center;
+    }
+
     .mobile-hidden {
         display: none
     }
@@ -1465,7 +1497,8 @@ body {
         width: -webkit-calc(100% - 32px);
         width: calc(100% - 32px);
         content: '';
-        background: url("../img/block1.jpg")
+        background: url("../img/block1.jpg") no-repeat;
+        background-size: cover;
     }
     .block1 {
         margin-bottom: 32.8125%
@@ -1840,9 +1873,22 @@ body {
     .footer .kdm {
         font-size: 10px
     }
+
+    .block5 .block5-bottom {
+        flex-direction: column;
+    }
+
+    .block5 .block5-bottom img {
+        align-self: center;
+    }
 }
 
 @media screen and (max-width:440px) {
+
+    .list-cont {
+        flex-direction: column;
+    }
+
     .header-top_mobile .top,
     .mobile-menu .mobile-first .top {
         font-size: 12px
